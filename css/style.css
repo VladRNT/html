@@ -168,6 +168,12 @@ h1, .name__red {
     background-color: #C00407;
     border-radius: 3px;
 }
+.rental__button:hover {
+    background-color: black;
+}
+.transition {
+    transition: 0.4s;
+}
 #rental {
     padding: 240px 0 200px 0;
 }
