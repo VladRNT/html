@@ -1,18 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+:root {
+    --paragraph-color: rgb(140, 140, 140);
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
 .benefits__image, .pricing__icon, .exp__icon {
     width: 40px;
     height: 40px;
 }
 .top__icons {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
 }
 .logo {
-    width: 186px;
-    height: 47px;
+    width: 220px;
+    height: 65px;
 }
 .phone {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 .coffeephoto {
     width: 509px;
@@ -52,11 +68,23 @@
 .coffee__element > img {
     width: 250px;
     height: 250px;
-} 
 }
 .section__tag {
     text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
     color: #C00407;
+}
+.section__rental {
+    color: rgb(223,223,223);
+}
+h1, .name__red {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 75px;
 }
 .name__red, .number__steps, .z9,
 .price__red, .arrow__red, .action__red {
@@ -77,4 +105,99 @@
 .f__coffeespacelogo {
     width: 238px;
     height: 60px;
+}
+.top__contacts .top__contacts__geo .adress {
+    position: relative;
+    left: 30px;
+}
+.top__contacts .top__contacts__phone img {
+    position: relative;
+    right: 20px;
+}
+.top__contacts .top__contacts__phone .top__contacts__number {
+    bottom: 5px;
+    position: relative;
+}
+.top__contacts, .top__contacts__geo {
+    display: flex;
+    justify-content: space-between;
+}
+.top__contacts{
+    font-weight: 700;
+    font-size: 14px;
+    height: 42px;
+    align-items: center;
+}
+.top-nav {
+    margin-top: 30px;
+}
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav .menu a {
+    position: relative;
+    margin-left: 20px;
+    color: rgb(101, 101, 101);
+    font-weight: 700;
+    font-size: 14px;
+}
+.top-nav .menu a:hover {
+    color: red;
+}
+.header__background{
+    display: block;
+    margin-top: 30px;
+    background: url(../img/man-with-coffee__background.png) no-repeat center top / cover;
+}
+.rental__descr {
+    margin-top: 35px;
+    font-size: 18px;
+    color: rgb(223, 223, 223);
+}
+.rental__button {
+    display: block;
+    margin-top: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 700;
+    padding: 15px 25px;
+    width: 150px;
+    text-align: center;
+    background-color: #C00407;
+    border-radius: 3px;
+}
+#rental {
+    padding: 240px 0 200px 0;
+}
+#benefits {
+    margin-top: 50px;
+}
+.included, .delivery, .prices {
+    padding: 40px 45px;
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    margin-top: 5px;
+}
+.benefits__container, .included, .delivery, .prices{
+    display: flex;
+    justify-content: space-between;
+}
+.benefits__content {
+    margin-left: 30px;
+}
+.benefits__content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+.benefits__image {
+    padding: 10px 0 0 0;
+}
+.benefits__content p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--paragraph-color);
 }
