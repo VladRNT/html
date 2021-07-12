@@ -138,10 +138,16 @@ h1, .name__red {
 }
 .top-nav .menu a {
     position: relative;
-    margin-left: 20px;
+    margin-left: 35px;
     color: rgb(101, 101, 101);
     font-weight: 700;
     font-size: 14px;
+}
+@media (max-width: 1130px) {
+	.top-nav .menu {
+		display: grid;
+        text-align: center;
+	}
 }
 .top-nav .menu a:hover {
     color: red;
@@ -167,12 +173,11 @@ h1, .name__red {
     text-align: center;
     background-color: #C00407;
     border-radius: 3px;
+    transition: color .2s ease-out;
 }
 .rental__button:hover {
+    transition: color .2s ease-out;
     background-color: black;
-}
-.transition {
-    transition: 0.4s;
 }
 #rental {
     padding: 240px 0 200px 0;
