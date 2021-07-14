@@ -6,13 +6,18 @@
 * {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: black;
+    list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 .container {
 	max-width: 1170px;
 	margin: auto;
+}
+.paragraph__text {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    line-height: 26px;
 }
 .benefits__image, .pricing__icon, .exp__icon {
     width: 40px;
@@ -31,8 +36,8 @@
     height: 20px;
 }
 .coffeephoto {
-    width: 509px;
-    height: 508px;
+    width: 570px;
+    height: 560px;
     border-radius: 8px;
 }
 .element__photo {
@@ -212,3 +217,185 @@ h1, .name__red {
     line-height: 25px;
     color: var(--paragraph-color);
 }
+#about .about__countainer {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about__content {
+    margin-left: 20px;
+}
+.section__about {
+    margin-top: 30px;
+    margin-bottom: 27px;
+}
+.section__name {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.about__content .about__descr {
+    color: rgb(101, 101, 101);
+    font-weight: 400;
+    line-height: 27px;
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+}
+.about__content ul li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-top: 24px;
+}
+.about__content ul li .about__list__name {
+    font-weight: 700;
+    color: black;
+}
+.products {
+    margin-top: 93px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.products .products__element {
+    width: 570px;
+    height: 330px;
+    border-radius: 6px;
+}
+.products .products__element hr {
+    height: 2px;
+    width: 45px;
+    border: none;
+    margin: auto;
+    background-color: #C00407;
+}
+.products__name, .z9 {
+    margin: 70px 0 15px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    font-family: 'Poppins', sans-serif;
+}
+.products__indulgo {
+    background-image: url(../img/indulgo__backround.png);
+    text-align: center;
+}
+.products__beans {
+    background-image: url(../img/coffee-drink__background.png);  
+}
+.products__descr {
+    color: rgba(41, 40, 40, 0.8);
+    margin-top: 15px;
+}
+.beans__content p, .beans__content a {
+    color: white;
+    margin-left: 40px;
+}
+.products__order {
+    font-weight: 700;
+    font-size: 12px;
+}
+.products__price {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.price__red {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+#steps .container h2,
+.comment__steps {
+    text-align: center;
+}
+#steps .container .section__tag {
+    text-align: center;
+    margin: 135px 0 30px 0;
+}
+.comment__steps {
+    color: rgb(101, 101, 101);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.elements__steps {
+    display: grid;
+    grid-template-columns: 210px 210px 210px 210px;
+    justify-content: space-between;
+}
+.element__steps{
+    margin: 80px 0 210px 0;
+    text-align: center;
+}
+.element__steps .element__name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.number__steps{
+    font-weight: 700;
+    font-size: 20px;
+}
+.describe__steps {
+    margin-top: 10px;
+}
+.special {
+    display: block;
+    background: url(../img/red-leaves__background.png) no-repeat center top / cover;
+}
+.special .special__content p {
+    color: white;
+}
+.special__name {
+    font-size: 68px;
+    font-weight: 700;
+    margin-top: 35px;
+    line-height: 75px;
+    font-family: 'Poppins', sans-serif;
+}
+.special__describe {
+    font-size: 18px;
+    line-height: 27px;
+}
+.special__content {
+    padding: 175px 0 0 175px;
+    display: grid;
+    grid-template-columns: 650px 470px;
+}
+.element__photo {
+    width: 240px;
+    height: 155px;
+}
+.coffee__machine__smik__2021 {
+    width: 470px;
+    height: 550px;
+    margin-left: 50px;
+}
+.special__describe {
+    margin: 35px 0 45px 0;
+}
+.special__buttons {
+    display: grid;
+    grid-template-columns: 130px 190px;
+    margin-bottom: 235px;
+}
+.button__second {
+    padding: 17px 0 17px 0;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 2px;
+}
+.button__outline {
+    padding: 10px 0 8px 0;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 4px 0 4px 25px;
+    border: 3px white solid;
+    border-radius: 2px;
+}
+.special__section {
+     margin-top: 100px;
+}
+
