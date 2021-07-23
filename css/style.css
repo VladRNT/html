@@ -371,6 +371,7 @@ h1, .name__red {
     line-height: 27px;
 }
 .special__content {
+    margin-left: 200px;
     padding: 175px 0 0 175px;
     display: grid;
     grid-template-columns: 650px 470px;
@@ -410,7 +411,8 @@ h1, .name__red {
     border-radius: 2px;
 }
 .special__section {
-     margin-top: 100px;
+    text-align: left;
+    margin-top: 100px;
 }
 .coffeemachine__store {
     display: flex;
@@ -492,4 +494,331 @@ h1, .name__red {
 }
 .exceptional__content ul li {
     margin-top: 40px;
+}
+.section__arrival {
+    text-align: left;
+}
+.action {
+    display: block;
+    max-width: 1030px;
+    margin: auto;
+    padding: 80px 70px 80px 70px;
+    background: url(../img/coffee__machine__background.png);
+}
+.action__name, .action__red {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.action a {
+    margin-top: 100px;
+}
+.action .button__second,
+#questions .questions__content .button__second {
+    margin-top: 100px;
+    background-color: #C00407;
+    color: white;
+    padding: 13px 22px 13px 22px;
+}
+.action__buttons {
+    margin-top: 40px;
+}
+.action .button__outline,
+#questions .questions__content .button__outline {
+    color: black;
+    margin-top: 100px;
+    border: 3px black solid;
+    padding: 10px 20px 10px 20px;
+}
+.action .paragraph__text {
+    margin-top: 35px;
+}
+.button__second .button__outline {
+    margin-top: 30px;
+}
+#arrival {
+    margin: 200px 0 220px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#arrival .arrival__content {
+    max-width: 645px;
+    margin-left: 190px;
+}
+#arrival .arrival__content .section__name {
+    text-align: left;
+}
+#arrival .arrival__content .paragraph__text {
+    margin-top: 40px;
+}
+#arrival .arrival__content .arrival__list {
+    margin-top: 38px;
+}
+#arrival .arrival__content .arrival__list .arrival__list__element {
+    margin-top: 15px;
+    color: rgb(101, 101, 101);
+    display: flex;
+    align-items: center;
+}
+#arrival .arrival__content .arrival__list .arrival__list__element p {
+    margin-left: 10px;
+}
+#arrival .arrival__content .arrival__button {
+    display: block;
+    margin-top: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 25px;
+    width: 70px;
+    text-align: center;
+    background-color: #C00407;
+    border-radius: 2px;
+}
+#arrival .arrival__content .arrival__button:hover {
+    background-color: black;
+}
+#services .container .section__name {
+    margin-bottom: 15px;
+}
+#services .container .comment {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 770px;
+}
+.middle__nav {
+    margin-top: 85px;
+}
+.middle__nav .services__menu {
+    display: flex;
+    justify-content: center;
+}
+.middle__nav .services__menu li {
+    margin-left: 40px;
+    font-weight: 700;
+}
+#services .container .services__hr {
+    margin: 15px 0 90px 0;
+    border: 1px rgb(209, 209, 209) solid;
+}
+#coffee .container .section__name {
+    margin-bottom: 10px;
+}
+#coffee .container .comment {
+    max-width: 770px;
+    margin: auto;
+}
+#coffee .container .coffee__element button {
+    display: block;
+    margin: 15px 0 125px 0;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 7px;
+    width: 125px;
+    text-align: center;
+    background-color: #C00407;
+    border-radius: 3px;
+    border: 0px;
+}
+.coffee__element {
+    font-weight: 600;
+}
+.coffee__price {
+    margin: 10px 0 10px 0;
+}
+.coffee__carousel {
+    margin-top: 70px;
+    display: flex;
+}
+.servicesmenu__tag {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.tab-trigger {
+    color: rgb(146, 146, 146);
+}
+#services .container nav ul li a:hover {
+    color: black;
+}
+.servicesmenu__element hr {
+    border: 1px #c00407 solid;
+    max-width: 45px;
+    margin: 15px 0 15px 0;
+}
+.servicesmenu__desc {
+    margin-bottom: 30px;
+    color: rgb(81, 81, 81);
+    line-height: 25px;
+}
+.servicesmenu__element ul li {
+    margin-top: 15px;
+    color: rgb(146, 146, 146);
+    display: flex;
+}
+.servicesmenu__element ul li p {
+    margin-left: 10px;
+}
+.servicesmenu__element {
+    align-items: center;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+}
+.servicesmenu__element {
+    display: none;
+}
+.services__item-active {
+    display: grid;
+}
+.servicesmenu__element__container {
+    margin-left: 65px;
+}
+.tab-trigger__active {
+    color: black;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4d4d4d;
+}
+.servicesmenu__element__content {
+    max-width: 405px;
+}
+.section__questions {
+    text-align: left;
+}
+.questions__name {
+    font-size: 68px;
+    line-height: 78px;
+    font-family: 'Poppins', sans-serif;
+}
+.questions__name span {
+    color: #C00407;
+    font-family: 'Poppins', sans-serif;
+}
+#questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F0E7DE;
+    justify-content: space-between;
+}
+.questions__content {
+    margin-left: 190px;
+}
+#questions img {
+    margin-left: 130px;
+}
+#questions .questions__content .paragraph__text {
+    font-size: 18px;
+    margin: 50px 0 40px 0;
+}
+.questions__content a {
+    font-size: 15px;
+}
+.experience {
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.exp__descr {
+    color: rgb(227,224,224);
+    margin-top: 20px;
+}
+.exp__amount {
+    margin: 15px 0 10px 0;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.red__1 {
+    background-color: #c00407;
+}
+.red__2 {
+    background-color: rgb(178, 3, 6);
+}
+.red__3 {
+    background-color: rgb(164, 4, 7);
+}
+.red__4 {
+    background-color: rgb(153, 2, 5);
+}
+.exp__icon__background {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background-color: #8b0b0d5d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exp__element {
+    padding: 80px 60px 80px 60px;
+    text-align: center;
+    align-items: center;
+}
+.exp__line {
+    max-width: 45px;
+    margin: auto;
+    border: 1px solid rgb(189, 78, 78);
+}
+.store__packages {
+    margin-top: 70px;
+}
+.store__element .type .price {
+    color: #c00407;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.store__element .type {
+    font-size: 22px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.duration {
+    font-style: italic;
+    font-size: 14px;
+}
+.store__element li {
+    display: flex;
+    margin-top: 25px;
+}
+.store__element li p {
+    margin-left: 10px;
+}
+#pricing .container .store__packages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    justify-content: space-around;
+}
+#pricing .container .store__packages .store__element {
+    padding: 50px;
+}
+.store__element {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
+}
+.pricing__icon-background {
+    height: 70px;
+    width: 70px;
+    background-color: #d6d6d648;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing__button {
+    padding: 15px 23px 15px 23px;
+    display: block;
+    max-width: 50px;
+    font-weight: 700;
+    margin-top: 45px;
+    color: white;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 2px;
+    font-size: 15px;
 }
