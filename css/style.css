@@ -52,6 +52,7 @@
 .elements__company__carousel {
     background-color: #222222;
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 35px;
 }
@@ -925,17 +926,43 @@ h1, .name__red {
 .section__faq {
     margin-top: 10px;
 }
-.accordion {
+.accordion__content {
     margin-top: 65px;
 }
-.accordion details summary {
+.accordion__content .accordion {
+    display: block;
+    margin: 20px 0 20px 0;
     font-size: 20px;
     font-weight: 500;
+}
+.accordion::before{
+    content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M16 9H9v7H7V9H0V7h7V0h2v7h7z'/%3E%3C/svg%3E");
+    margin: 0 0.5em 0 0;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out 0s;
+    transform-origin: 50% 50%;
+    will-change: transform;
+    right: 0;
+}
+.accordion.active::before {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.panel {
+    transition: height .2s ease-out;
+    display: none;
+}
+.transition__a {
+    transition: .2s;
+}
+.accordion__content .paragraph__text {
+    transition: height .2s ease-out;
+    margin-bottom: 20px;
 }
 .faq__content {
     margin-left: 15px;
 }
-#contacts {
+#contacts .container {
     padding: 120px 0 120px 0;
 }
 #contacts .container .section__tag {
