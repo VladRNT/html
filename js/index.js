@@ -16,15 +16,15 @@ document.querySelectorAll('.tab-trigger').forEach((item) =>
 document.querySelector('.tab-trigger').click();
 // accordion
 const acc = document.getElementsByClassName("accordion");
-let i;
+let i = 0;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    var accordiondescr = this.nextElementSibling;
+    if (accordiondescr.style.display === "block") {
+        accordiondescr.style.display = "none";
     } else {
-      panel.style.display = "block";
+        accordiondescr.style.display = "block";
     }
   });
 }
