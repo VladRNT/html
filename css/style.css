@@ -57,8 +57,7 @@
 }
 .elements__company__carousel img {
     margin-left: 40px;
-    width: 165px;
-    height: 70px;
+    max-height: 70px;
 }
 .coffeemachine__img {
     width: 233px;
