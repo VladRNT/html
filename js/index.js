@@ -19,8 +19,8 @@ const acc = document.getElementsByClassName("accordion");
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var accordiondescr = this.nextElementSibling;
-    if (accordiondescr.style.display === "block") {
+    let accordiondescr = this.nextElementSibling;
+    if (accordiondescr.style.hight === "block") {
         accordiondescr.style.display = "none";
     } else {
         accordiondescr.style.display = "block";
