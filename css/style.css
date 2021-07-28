@@ -959,6 +959,9 @@ h1, .name__red {
     transition: height .2s ease-out;
     margin-bottom: 20px;
 }
+.accordiondescr {
+    display: none;
+}
 .faq__content {
     margin-left: 15px;
 }
@@ -1066,6 +1069,15 @@ footer .container nav a:hover {
     width: 31px;
     height: 31px;
 }
+.socnetw .socnetwork__background {
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    width: 31px;
+    height: 31px;
+}
 .socnetwork__icons .socnetwork__background:hover {
     background-color: rgb(56, 56, 56);
 }
@@ -1119,6 +1131,9 @@ footer .container nav a:hover {
     border: 2px solid white;
     font-size: 15px;
     padding: 15px 25px 15px 25px;
+}
+.active__descr {
+    display: block;
 }
 .contact__imput:focus {
     border-color: rgb(59, 153, 252);

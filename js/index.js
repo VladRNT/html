@@ -16,8 +16,7 @@ document.querySelectorAll('.tab-trigger').forEach((item) =>
 document.querySelector('.tab-trigger').click();
 // accordion
 const acc = document.getElementsByClassName("accordion");
-let i = 0;
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var accordiondescr = this.nextElementSibling;
@@ -28,3 +27,4 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+// carrousel
