@@ -11,7 +11,7 @@ document.querySelectorAll('.tab-trigger').forEach((item) =>
         );
         item.classList.add('tab-trigger__active');
         document.getElementById(id).classList.add('services__item-active');
-    }) 
+    })
 );
 document.querySelector('.tab-trigger').click();
 // accordion
