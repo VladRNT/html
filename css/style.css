@@ -49,20 +49,35 @@
     width: 418px;
     height: 490px;
 }
-.elements__company__carousel {
+.company__carousel {
     background-color: #222222;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
+    padding: 35px 0 10px 0;
+}
+.prev, .next {
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.prev path:hover {
+    fill: #ffb600;
 }
 .elements__company__carousel img {
-    margin-left: 40px;
-    max-height: 70px;
+    max-width: 165px;
+}
+.company__carousel .container {
+    margin: 0;
+}
+.company__carousel .elements__company__carousel .owl-item .active {
+    max-width: 180px;
 }
 .coffeemachine__img {
     width: 233px;
     height: 233px; 
+}
+.owl-stage-outer {
+    width: 100%;
 }
 .coffee__photo {
     margin-left: 91px;
@@ -414,12 +429,29 @@ h1, .name__red {
     text-align: left;
     margin-top: 100px;
 }
-.coffeemachine__store {
+.coffeemachine__carousel {
     display: flex;
+    width: 100%;
+    margin-top: 65px;
+}
+.coffeemachine__store__element {
+    margin-left: 15px;
+    width: 233px;
+}
+.coffeemachine__store {
     font-size: 16px;
     font-weight: 600;
-    margin-top: 65px;
     line-height: 27px;
+}
+.coffee__carousel__container {
+    display: flex;
+}
+.coffeemachine__carousel__arrows {
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+.coffeemachine__carousel .container {
+    margin: 0;
 }
 .coffeemachine__store .coffeemachine__store__element button {
     display: block;
@@ -433,6 +465,10 @@ h1, .name__red {
     background-color: #C00407;
     border-radius: 3px;
     border: 0px;
+}
+.testi__carousel__el img {
+    max-width: 120px;
+    max-height: 120px;
 }
 .coffeemachine__store .coffeemachine__store__element button:hover {
     background-color: black;
@@ -930,37 +966,37 @@ h1, .name__red {
     margin-top: 65px;
 }
 .accordion__content .accordion {
-    display: block;
-    margin: 20px 0 20px 0;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
     font-size: 20px;
     font-weight: 500;
 }
-.accordion::before{
+.accordion::after{
     content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M16 9H9v7H7V9H0V7h7V0h2v7h7z'/%3E%3C/svg%3E");
     margin: 0 0.5em 0 0;
-    display: inline-block;
+    display: inline-flex;
     transition: transform 0.4s ease-in-out 0s;
     transform-origin: 50% 50%;
     will-change: transform;
     right: 0;
 }
-.accordion.active::before {
+.accordion.active::after {
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 .panel {
-    transition: height .2s ease-out;
-    display: none;
-}
-.transition__a {
-    transition: .2s;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: block;
 }
 .accordion__content .paragraph__text {
-    transition: height .2s ease-out;
-    margin-bottom: 20px;
+    transition: max-height 0.2s ease-out;
 }
-.accordiondescr {
-    display: none;
+.descr__active {
+    margin-bottom: 20px;
 }
 .faq__content {
     margin-left: 15px;

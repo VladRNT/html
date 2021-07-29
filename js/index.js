@@ -17,14 +17,19 @@ document.querySelector('.tab-trigger').click();
 // accordion
 const acc = document.getElementsByClassName("accordion");
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let accordiondescr = this.nextElementSibling;
-    if (accordiondescr.style.hight === "block") {
-        accordiondescr.style.display = "none";
-    } else {
-        accordiondescr.style.display = "block";
-    }
-  });
+  acc[i].addEventListener("click", openCurrAccordion);
 }
-// carrousel
+function openCurrAccordion(e)  {
+    for (let i = 0; i < acc.length; i++) {
+    const accordionDescr = acc[i].nextElementSibling;
+    if (this === acc[i] && !acc[i].classList.contains('active')) {
+        acc[i].classList.add('active');
+        accordionDescr.style.maxHeight = accordionDescr.scrollHeight + 'px';
+        accordionDescr.style.margin = '0 0 20px 0';
+    } else {
+        acc[i].classList.remove('active');
+        accordionDescr.style.maxHeight = '0px';
+        accordionDescr.style.margin = null;
+    }
+  }
+}

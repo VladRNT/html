@@ -167,55 +167,60 @@
               <img class="coffee__machine__smik__2021" src="img/coffeemachine__special.webp" alt="coffee machine smik original 2021">
             </div>
         </div>
-        <div id="company__carousel">
-          <ul class="elements__company__carousel">
-            <li><img class="prev" src="img/slide-prev.svg" alt="next slide"></li>
+        <div class="company__carousel">
+          <img class="customPreviousBtn prev" src="img/slide-prev.svg" alt="prev slide">
+          <ul class="elements__company__carousel container owl-carousel slide-one">
             <li class="element__company__carousel"><img src="img/lavazza.png" alt="lavazza"></li>
             <li class="element__company__carousel"><img src="img/folgers.png" alt="folgers"></li>
             <li class="element__company__carousel"><img src="img/frontier.png" alt="frontier"></li>
             <li class="element__company__carousel"><img src="img/melitta.png" alt="melitta"></li>
             <li class="element__company__carousel"><img src="img/greenmountain.png" alt="greenmountain"></li>
             <li class="element__company__carousel"><img src="img/monarch.png" alt="monarch"></li>
-            <li><img class="next" src="img/slide-next.svg" alt="prev slide"></li>
+            <li class="element__company__carousel"><img src="img/costa.png" alt="costa"></li>
           </ul>
+          <img class="customNextBtn next" src="img/slide-next.svg" alt="next slide">
         </div>
         <section id="machines">
           <div class="container">
             <p class="section__tag">coffee machines</p>
             <h2 class="section__name">Discover Coffee Machines We Offer</h2>
             <p class="comment">We offer professional coffee machines for commercial and home use.</p>
-            <div class="coffeemachine__store">
-              <div class="coffeemachine__store__element">
-                <img class="coffeemachine__img" src="img/store/coffeemachines/frost.png" alt="frost coffee machine">
-                <p class="coffeemachine__name">FROST Coffee Machine</p>
-                <p>199,00USD</p>
-                <button class="transition">Add to Cart</button>
+            <div class="coffeemachine__carousel">
+              <img class="coffeemachine__carousel__arrows customPreviousBtnTwo" src="img/arrow-left.svg" alt="prev slide">
+              <div class="coffeemachine__store container owl-carousel slide-two">
+                <div class="coffeemachine__store__element">
+                  <img class="coffeemachine__img" src="img/store/coffeemachines/frost.png" alt="frost coffee machine">
+                  <p class="coffeemachine__name">FROST Coffee Machine</p>
+                  <p>199,00USD</p>
+                  <button class="transition">Add to Cart</button>
+                </div>
+                <div class="coffeemachine__store__element">
+                  <img class="coffeemachine__img" src="img/store/coffeemachines/smik2.png" alt="smik 2 coffee machine">
+                  <p class="coffeemachine__name">SMIK 2 Coffee Machine</p>
+                  <p>299,00USD</p>
+                  <button class="transition">Add to Cart</button>
+                </div>
+                <div class="coffeemachine__store__element">
+                  <img class="coffeemachine__img" src="img/store/coffeemachines/organic.png" alt="organic coffee machine">
+                  <p class="coffeemachine__name">ORGANIC Coffee Machine</p>
+                  <p>299,00USD</p>
+                  <button class="transition">Add to Cart</button>
+                </div>
+                <div class="coffeemachine__store__element">
+                  <img class="coffeemachine__img" src="img/store/coffeemachines/smik.png" alt="smik coffee machine">
+                  <p class="coffeemachine__name">SMIK Coffee Machine</p>
+                  <p>199,00USD</p>
+                  <button class="transition">Add to Cart</button>
+                </div>
+                <div class="coffeemachine__store__element">
+                  <img class="coffeemachine__img" src="img/store/coffeemachines/laspezia.png" alt="la spezia coffee machine">
+                  <p class="coffeemachine__name">La Spezia Coffee Machine</p>
+                  <p>499,00USD</p>
+                  <button class="transition">Add to Cart</button>
+                </div>
               </div>
-              <div class="coffeemachine__store__element">
-                <img class="coffeemachine__img" src="img/store/coffeemachines/smik2.png" alt="smik 2 coffee machine">
-                <p class="coffeemachine__name">SMIK 2 Coffee Machine</p>
-                <p>299,00USD</p>
-                <button class="transition">Add to Cart</button>
+              <img class="coffeemachine__carousel__arrows customNextBtnTwo" src="img/arrow-right.svg" alt="next slide">
               </div>
-              <div class="coffeemachine__store__element">
-                <img class="coffeemachine__img" src="img/store/coffeemachines/organic.png" alt="organic coffee machine">
-                <p class="coffeemachine__name">ORGANIC Coffee Machine</p>
-                <p>299,00USD</p>
-                <button class="transition">Add to Cart</button>
-              </div>
-              <div class="coffeemachine__store__element">
-                <img class="coffeemachine__img" src="img/store/coffeemachines/smik.png" alt="smik coffee machine">
-                <p class="coffeemachine__name">SMIK Coffee Machine</p>
-                <p>199,00USD</p>
-                <button class="transition">Add to Cart</button>
-              </div>
-              <div class="coffeemachine__store__element">
-                <img class="coffeemachine__img" src="img/store/coffeemachines/laspezia.png" alt="la spezia coffee machine">
-                <p class="coffeemachine__name">La Spezia Coffee Machine</p>
-                <p>499,00USD</p>
-                <button class="transition">Add to Cart</button>
-              </div>
-            </div>
           </div>
         </section>
         <section id="exceptional__taste">
@@ -402,37 +407,41 @@
             <p class="section__tag">our coffee</p>
             <h2 class="section__name">Discover the Rich Coffee Taste</h2>
             <p class="comment">We work with one of the best coffee producers. Golden Peak offers different coffee varieties for all coffeeholics. Just click on the image and add the product to the cart.</p>
-            <div class="coffee__carousel">
-              <div class="coffee__element">
-                <img src="img/store/coffee/classico.png" alt="Classico">
-                <p>Classico</p>
-                <p class="coffee__price">4,50USD</p>
-                <button class="addtocart">Add to Cart</button>
+            <div class="coffee__carousel__container">  
+              <img class="coffeemachine__carousel__arrows customPreviousBtnThree" src="img/arrow-left.svg" alt="prev slide">
+              <div class="coffee__carousel owl-carousel slide-three">
+                <div class="coffee__element">
+                  <img src="img/store/coffee/classico.png" alt="Classico">
+                  <p>Classico</p>
+                  <p class="coffee__price">4,50USD</p>
+                  <button class="addtocart">Add to Cart</button>
+                </div>
+                <div class="coffee__element">
+                  <img src="img/store/coffee/intenso.png" alt="Intenso">
+                  <p>Intenso</p>
+                  <p class="coffee__price">5,00USD</p>
+                  <button class="addtocart">Add to Cart</button>
+                </div>
+                <div class="coffee__element">
+                  <img src="img/store/coffee/espresso.png" alt="Espresso">
+                  <p>Espresso</p>
+                  <p class="coffee__price">4,50USD</p>
+                  <button class="addtocart">Add to Cart</button>
+                </div>
+                <div class="coffee__element">
+                  <img src="img/store/coffee/decaf.png" alt="Decaf">
+                  <p>Decaf</p>
+                  <p class="coffee__price">4,50USD</p>
+                  <button class="addtocart">Add to Cart</button>
+                </div>
+                <div class="coffee__element">
+                  <img src="img/store/coffee/mocha.png" alt="Mocha">
+                  <p>Mocha</p>
+                  <p class="coffee__price">5,00USD</p>
+                  <button class="addtocart">Add to Cart</button>
+                </div>
               </div>
-              <div class="coffee__element">
-                <img src="img/store/coffee/intenso.png" alt="Intenso">
-                <p>Intenso</p>
-                <p class="coffee__price">5,00USD</p>
-                <button class="addtocart">Add to Cart</button>
-              </div>
-              <div class="coffee__element">
-                <img src="img/store/coffee/espresso.png" alt="Espresso">
-                <p>Espresso</p>
-                <p class="coffee__price">4,50USD</p>
-                <button class="addtocart">Add to Cart</button>
-              </div>
-              <div class="coffee__element">
-                <img src="img/store/coffee/decaf.png" alt="Decaf">
-                <p>Decaf</p>
-                <p class="coffee__price">4,50USD</p>
-                <button class="addtocart">Add to Cart</button>
-              </div>
-              <div class="coffee__element">
-                <img src="img/store/coffee/mocha.png" alt="Mocha">
-                <p>Mocha</p>
-                <p class="coffee__price">5,00USD</p>
-                <button class="addtocart">Add to Cart</button>
-              </div>
+              <img class="coffeemachine__carousel__arrows customNextBtnThree" src="img/arrow-right.svg" alt="next slide">
             </div>
           </div>
         </section>
@@ -585,30 +594,34 @@
             <h2 class="section__name">Warm Words from Our Clients</h2>
             <p class="comment">We are glad that our coffee machines and delicious whole-bean coffee delight our customers.</p>
             <div class="testimonials__carousel">
-              <div class="testi__carousel__el">
-                <img src="img/josh.webp" alt="josh mendel" class="people__photo">
-                <p class="client__name">Josh Mendel</p>
-                <p class="client__com paragraph__text">“I really love to drink coffee in the morning, but I hate making it. Therefore, I decided to rent a coffee machine from this company. I am very pleased with the service – everything was done quickly, they brought and set up the coffee machine.”</p>
-                <p class="date">December 15, 2020</p>
+              <img class="coffeemachine__carousel__arrows customPreviousBtnFour" src="img/arrow-left.svg" alt="prev slide">
+              <div class="owl-carousel slide-four">
+                <div class="testi__carousel__el">
+                  <img src="img/josh.webp" alt="josh mendel" class="people__photo">
+                  <p class="client__name">Josh Mendel</p>
+                  <p class="client__com paragraph__text">“I really love to drink coffee in the morning, but I hate making it. Therefore, I decided to rent a coffee machine from this company. I am very pleased with the service – everything was done quickly, they brought and set up the coffee machine.”</p>
+                  <p class="date">December 15, 2020</p>
+                </div>
+                <div class="testi__carousel__el">
+                  <img src="img/jessica.webp" alt="jessica malacks" class="people__photo">
+                  <p class="client__name">Jessica Malacks</p>
+                  <p class="client__com paragraph__text">“We have renovated the office kitchen and decided to delight our employees with automatic coffee machines. However, such equipment is very expensive. So, we simply rented coffee machines from this company and were completely satisfied.”</p>
+                  <p class="date">February 10, 2021</p>
+                </div>
+                <div class="testi__carousel__el">
+                  <img src="img/daniella.webp" alt="daniella williamson" class="people__photo">
+                  <p class="client__name">Daniella Williamson</p>
+                  <p class="client__com paragraph__text">“When I opened a coffee shop, I couldn't find an affordable coffee machine. Finally, I found this company and I am grateful for their excellent advice. They helped with the choice of the coffee machine and regularly deliver coffee beans and cups." </p>
+                  <p class="date">March 04, 2021</p>
+                </div>
+                <div class="testi__carousel__el">
+                  <img src="img/dean.webp" alt="dean steinberg" class="people__photo">
+                  <p class="client__name">Dean Steinberg</p>
+                  <p class="client__com paragraph__text">“We have been cooperating with this company for 2 years already, and during this time, not a single problem situation has arisen. The service is fast, the coffee is delivered without delay, the prices for coffee machine rental are very low.”</p>
+                  <p class="date">March 22, 2021</p>
+                </div>
               </div>
-              <div class="testi__carousel__el">
-                <img src="img/jessica.webp" alt="jessica malacks" class="people__photo">
-                <p class="client__name">Jessica Malacks</p>
-                <p class="client__com paragraph__text">“We have renovated the office kitchen and decided to delight our employees with automatic coffee machines. However, such equipment is very expensive. So, we simply rented coffee machines from this company and were completely satisfied.”</p>
-                <p class="date">February 10, 2021</p>
-              </div>
-              <div class="testi__carousel__el">
-                <img src="img/daniella.webp" alt="daniella williamson" class="people__photo">
-                <p class="client__name">Daniella Williamson</p>
-                <p class="client__com paragraph__text">“When I opened a coffee shop, I couldn't find an affordable coffee machine. Finally, I found this company and I am grateful for their excellent advice. They helped with the choice of the coffee machine and regularly deliver coffee beans and cups." </p>
-                <p class="date">March 04, 2021</p>
-              </div>
-              <div class="testi__carousel__el">
-                <img src="img/dean.webp" alt="dean steinberg" class="people__photo">
-                <p class="client__name">Dean Steinberg</p>
-                <p class="client__com paragraph__text">“We have been cooperating with this company for 2 years already, and during this time, not a single problem situation has arisen. The service is fast, the coffee is delivered without delay, the prices for coffee machine rental are very low.”</p>
-                <p class="date">March 22, 2021</p>
-              </div>
+              <img class="coffeemachine__carousel__arrows customNextBtnFour" src="img/arrow-right.svg" alt="next slide">
             </div>
           </div>
         </section>
@@ -620,22 +633,22 @@
             <p class="comment faq__descr">We have collected the most frequently asked questions regarding our service. If you still have any questions, we will be happy to answer them in a personal consultation.</p>
             <div class="accordion__content">
               <a class="accordion">What coffee machines do you offer?</a>
-              <div class="accordiondescr paragraph__text">We offer our customers various types of coffee machines – from manual ones for home use to professional equipment.</div>
+              <div class="panel accordiondescr paragraph__text">We offer our customers various types of coffee machines – from manual ones for home use to professional equipment.</div>
               <hr>
               <a class="accordion">Can I use my coffee in a rented coffee machine?</a>
-              <div class="accordiondescr paragraph__text">Sure. You can buy our coffee beans if you wish. But you can also use any other coffee beans.</div>
+              <div class="panel accordiondescr paragraph__text">Sure. You can buy our coffee beans if you wish. But you can also use any other coffee beans.</div>
               <hr>
               <a class="accordion">What is the minimum rental period?</a>
-              <div class="accordiondescr paragraph__text">You can rent a coffee machine for at least 2 months.</div>
+              <div class="panel accordiondescr paragraph__text">You can rent a coffee machine for at least 2 months.</div>
               <hr>
               <a class="accordion">What if the coffee machine breaks down?</a>
-              <div class="accordiondescr paragraph__text">In the event of a malfunction of the coffee machine, you need to contact our manager, and we will immediately repair or replace the coffee machine.</div>
+              <div class="panel accordiondescr paragraph__text">In the event of a malfunction of the coffee machine, you need to contact our manager, and we will immediately repair or replace the coffee machine.</div>
               <hr>
               <a class="accordion">How to order a coffee machine?</a>
-              <div class="accordiondescr paragraph__text">Choose a coffee machine right on the website or send us a request if you need advice. We will contact you, discuss all the details, send you a rental agreement, and install the chosen coffee machine.</div>
+              <div class="panel accordiondescr paragraph__text">Choose a coffee machine right on the website or send us a request if you need advice. We will contact you, discuss all the details, send you a rental agreement, and install the chosen coffee machine.</div>
               <hr>
               <a class="accordion">What if I want to cancel my coffee machine rental?</a>
-              <div class="accordiondescr paragraph__text">You can terminate your rental at any time. To do this, inform our manager about your decision, and our specialists will pick up the coffee machine.</div>
+              <div class="panel accordiondescr paragraph__text">You can terminate your rental at any time. To do this, inform our manager about your decision, and our specialists will pick up the coffee machine.</div>
               <hr>
             </div>
           </div>
