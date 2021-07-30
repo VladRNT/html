@@ -202,6 +202,7 @@ h1, .name__red {
     margin-top: 60px;
     color: rgb(255, 255, 255);
     font-size: 17px;
+    transition: 0.3s;
     font-weight: 700;
     padding: 15px 25px;
     width: 150px;
@@ -210,6 +211,7 @@ h1, .name__red {
     border-radius: 3px;
 }
 .rental__button:hover {
+    transition: 0.3s;
     background-color: black;
 }
 #rental {
@@ -415,6 +417,12 @@ h1, .name__red {
     text-align: center;
     background-color: white;
     border-radius: 2px;
+    transition: .3s;
+}
+.button__second:hover {
+    background-color: #222;
+    color: white;
+    transition: .3s;
 }
 .button__outline {
     padding: 10px 0 8px 0;
@@ -424,6 +432,12 @@ h1, .name__red {
     margin: 4px 0 4px 25px;
     border: 3px white solid;
     border-radius: 2px;
+    transition: .3s;
+}
+.button__outline:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
 }
 .special__section {
     text-align: left;
@@ -465,6 +479,7 @@ h1, .name__red {
     background-color: #C00407;
     border-radius: 3px;
     border: 0px;
+    transition: .3s;
 }
 .testi__carousel__el img {
     max-width: 120px;
@@ -472,6 +487,7 @@ h1, .name__red {
 }
 .coffeemachine__store .coffeemachine__store__element button:hover {
     background-color: black;
+    transition: .3s;
 }
 .coffeemachine__store .coffeemachine__store__element .coffeemachine__name {
     margin-top: 10px;
@@ -554,7 +570,18 @@ h1, .name__red {
     margin-top: 100px;
     background-color: #C00407;
     color: white;
+    transition: .3s;
     padding: 13px 22px 13px 22px;
+}
+.action .button__second:hover,
+#questions .questions__content .button__second:hover {
+    background-color: #222;
+    color: white;
+}
+.action .button__outline:hover,
+#questions .questions__content .button__outline:hover {
+    background-color: #222;
+    color: white;
 }
 .action__buttons {
     margin-top: 40px;
@@ -610,9 +637,11 @@ h1, .name__red {
     text-align: center;
     background-color: #C00407;
     border-radius: 2px;
+    transition: .3s;
 }
 #arrival .arrival__content .arrival__button:hover {
     background-color: black;
+    transition: .3s;
 }
 #services .container .section__name {
     margin-bottom: 15px;
@@ -650,6 +679,7 @@ h1, .name__red {
     margin: 15px 0 125px 0;
     color: rgb(255, 255, 255);
     font-size: 15px;
+    cursor: pointer;
     font-weight: 700;
     padding: 15px 7px;
     width: 125px;
@@ -657,6 +687,11 @@ h1, .name__red {
     background-color: #C00407;
     border-radius: 3px;
     border: 0px;
+    transition: .3s;
+}
+#coffee .container .coffee__element button:hover {
+    background-color: #222;
+    color: white;
 }
 .coffee__element {
     font-weight: 600;
@@ -853,11 +888,16 @@ h1, .name__red {
     max-width: 50px;
     font-weight: 700;
     margin-top: 45px;
+    transition: .3s;
     color: white;
     text-align: center;
     background-color: rgb(34, 34, 34);
     border-radius: 2px;
     font-size: 15px;
+}
+.pricing__button:hover {
+    transition: .3s;
+    background-color: #C00407;
 }
 #video {
     background: url(../img/coffee-beans__background.png) no-repeat;
