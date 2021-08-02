@@ -1222,3 +1222,110 @@ footer .container nav a:hover {
     background-color: #222;
     color: white;
 }
+.section__name {
+    display: block;
+}
+/* Responsive */
+@media (max-width: 990px) {
+    .coffee__photo,
+    #arrival .arrival__content,
+    .questions__content {
+        margin-left: 0;
+    }
+    #exceptional__taste, #arrival,
+    #questions,
+    .choose .container,
+    #contacts .container {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .servicesmenu__element,
+    .video__content .container .video__grid,
+    .faq {
+        grid-template-columns: 1fr;
+    }
+    #arrival {
+        margin: 0 0 220px 0;
+    }
+    .red__coffeemachine,
+    #questions img {
+        margin-top: 130px;
+    }
+    #questions img {
+        margin-left: 0;
+    }
+    .action {
+        max-width: 900px;
+    }
+    .servicesmenu__element__content {
+        margin-top: 50px;
+    }
+    .questions__content {
+        display: block;
+    }
+    #pricing .container .store__packages {
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .experience {
+        grid-template-columns: 1fr 1fr;
+    }
+    .playvid {
+        margin-top: 30px;
+    }
+    .video__content .container {
+        margin-left: 40px;
+    }
+    .choose {
+        padding: 50px 0 30px 0;
+    }
+    .choose .choose__buttons {
+        margin-top: 0px;
+    }
+    .contact__request {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 680px) {
+    #pricing .container .store__packages {
+        grid-template-columns: 1fr;
+    }
+    .footer__nav, .socnetwork .container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .first__footer__nav {
+        margin-left: 0;
+    }
+    .footer__nav > div,
+    .footer__nav > nav {
+        margin-top: 50px;
+    }
+    .socnetwork__icons {
+        margin-top: 30px;
+    }
+    .contacts__content,
+    .exceptional__content,
+    #arrival .arrival__content {
+        margin-left: 10px;
+    }
+    .faq {
+        justify-items: center;
+    }
+    .faq img {
+        min-width: 380px;
+    }
+    .experience {
+        grid-template-columns: 1fr;
+    }
+    #questions img,
+    .red__coffeemachine,
+    .coffee__photo,
+    .coffee__photo__container {
+        min-width: 380px;
+    }
+    .arrival__content .comment {
+        text-align: left;
+    }
+}
