@@ -1450,6 +1450,10 @@ nav.active .burger-button span {
         grid-template-columns: 1fr;
     }
 }
+.section__name {
+    display: block;
+}
+/* Responsive */
 @media (max-width: 990px) {
     .coffee__photo,
     #arrival .arrival__content,
