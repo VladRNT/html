@@ -33,3 +33,12 @@ function openCurrAccordion(e)  {
     }
   }
 }
+// Burger
+function showBurger() {
+  menu.classList.toggle('active');
+  content.classList.toggle('active__content');
+  }
+const menu = document.querySelector('.mobile-header');
+const content = document.querySelector('.burger-menu-content');
+const menuButton = document.querySelector('.burger-button');
+menuButton.addEventListener('click', showBurger);

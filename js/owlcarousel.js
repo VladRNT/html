@@ -5,6 +5,22 @@ $('.slide-one').owlCarousel({
     loop:false,
     margin:5,
     nav:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
 })
 // First carousel custom buttons
 const owl = $('.slide-one');
@@ -21,6 +37,22 @@ $('.slide-two').owlCarousel({
   loop:true,
   margin:32,
   nav:false,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      600:{
+          items:2,
+          nav:false
+      },
+      1000:{
+          items:4,
+          nav:true,
+          loop:true
+      }
+  }
 })
 // Three carousel custom buttons
 const owlTwo = $('.slide-two');
@@ -37,6 +69,22 @@ $('.slide-three').owlCarousel({
   loop:true,
   margin:48,
   nav:false,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      600:{
+          items:2,
+          nav:false
+      },
+      1000:{
+          items:4,
+          nav:true,
+          loop:true
+      }
+  }
 })
 // Four carousel custom buttons
 const owlThree = $('.slide-three');
@@ -53,6 +101,24 @@ $('.slide-four').owlCarousel({
   loop:false,
   margin:50,
   nav:false,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          loop:true
+      },
+      600:{
+          items:2,
+          nav:true,
+          nav:false
+      },
+      1000:{
+          items:3,
+          nav:true,
+          loop:false
+      }
+  }
 })
 // Four carousel custom buttons
 const owlFour = $('.slide-four');

@@ -167,25 +167,65 @@ h1, .name__red {
     margin-top: 30px;
 }
 .top-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 220px 700px 110px 40px;
     align-items: center;
     justify-content: space-between;
 }
 .top-nav .menu a {
+    text-align: left;
+    text-align: center;
+    width: 100%;
     position: relative;
-    margin-left: 35px;
     color: rgb(101, 101, 101);
     font-weight: 700;
     font-size: 14px;
 }
-@media (max-width: 1130px) {
-	.top-nav .menu {
-		display: grid;
-        text-align: center;
-	}
+.top-nav .menu {
+    display: grid;
+    text-align: center;
+    border-radius: 0.5rem;
+    justify-content: center;
+    grid-template-columns: 1fr 150px 1fr 1fr 1fr 1fr 1fr;
+}
+.menu__about {
+    margin: 0 0 0 0;
 }
 .top-nav .menu a:hover {
     color: red;
+}
+.top-nav .menu a:hover:before {
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+}
+.top-nav .menu a:before { 
+	content: '';
+	width: 100%;
+	height: 2px;
+    border: 2px;
+	background-color: #C00407;
+	position: absolute;
+	left: 0; bottom: -10px;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	transform-origin: right;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
 }
 .header__background{
     display: block;
@@ -222,12 +262,14 @@ h1, .name__red {
 }
 .included, .delivery, .prices {
     padding: 40px 45px;
+    display: flex;
     background-color: rgb(255, 255, 255);
     max-width: 300px;
     margin-top: 5px;
 }
-.benefits__container, .included, .delivery, .prices{
-    display: flex;
+.benefits__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
 }
 .benefits__content {
@@ -371,7 +413,7 @@ h1, .name__red {
 }
 .special {
     display: block;
-    background: url(../img/red-leaves__background.png) no-repeat center top / cover;
+    background: url(../img/red-leaves__background.png) no-repeat top / cover;
 }
 .special .special__content p {
     color: white;
@@ -656,7 +698,8 @@ h1, .name__red {
     margin-top: 85px;
 }
 .middle__nav .services__menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
 }
 .middle__nav .services__menu li {
@@ -776,6 +819,7 @@ h1, .name__red {
     margin-left: 190px;
 }
 #questions img {
+    max-width: 100%;
     margin-left: 130px;
 }
 #questions .questions__content .paragraph__text {
@@ -1063,6 +1107,13 @@ h1, .name__red {
 #contacts .container .comment {
     margin-bottom: 50px;
 }
+.socnetw {
+    margin-left: 50px;
+    display: flex;
+}
+.socnetw a {
+    margin-left: 8px;
+}
 .info__address, .info__hours,
 .info__contacts {
     margin-top: 20px;
@@ -1221,4 +1272,408 @@ footer .container nav a:hover {
 .contact__request .f__button__request:hover {
     background-color: #222;
     color: white;
+}
+.owl-carousel .owl-item img {
+    width: 250px !important;
+}
+.burger-menu-content {
+    display: none;
+  }
+.burger-button {
+    width: 24px;
+    height: 16px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+  
+.burger-button span,
+.burger-button::before,
+.burger-button::after {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    transition: all 0.2s;
+}
+  
+.burger-button::before,
+.burger-button::after {
+    content: "";
+}
+  
+nav.active .burger-button::before {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+nav.active .burger-button::after {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 7px;
+}
+nav.active .burger-button span {
+    transform: scale(0);
+}
+.active__content {
+    display: block;
+}
+.burger-menu-content {
+    display: none;
+}
+/* 
+=========================================================
+                        Responsive <3 
+=========================================================
+*/
+@media (max-width: 1100px) {
+    .special__content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .burger-menu-content .socnetw {
+        display: block;
+    }
+    .burger-menu-content .top__contacts__phone .top__contacts__number {
+        color: black;
+    }
+    .top__contacts__phone {
+        margin: 40px 0 20px 0;
+    }
+    .burger-menu-content hr {
+        max-width: 100px;
+    }
+    .active__content .top__contacts {
+        display: block;
+    }
+    .burger-menu-content .top__contacts__geo {
+        justify-content: baseline;
+    }
+    .coffeemachine__carousel__arrows,
+    .customNextBtn,
+    .customPrevBtn {
+        display: none;
+    }
+    .logo {
+        margin-left: 40px;
+    }
+    .top-nav {
+        grid-template-columns: 1fr 100px;
+    }
+    .mobile-header {
+        margin-right: 30px;
+    }
+    .top-nav .menu {
+        display: none;
+    }
+    .top-nav .socnetw {
+        display: none;
+    }
+    .top-nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+    .burger-button {
+        display: flex;
+    }
+    .active__content a,
+    .active__content p {
+        color: rgb(101, 101, 101);
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .active__content a:hover {
+        color: #C00407;
+        transition: .3s;
+    }
+    .active__content {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        text-align: center;
+    }
+}
+@media (max-width: 990px) {
+    .top__contacts {
+        display: none;
+    }
+    .benefits__container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .products {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .elements__steps {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .element__steps {
+        margin-bottom: 45px;
+        max-width: 410px;
+    }
+    .products .products__element {
+        width: 100%;
+    }
+    .coffeephoto {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .special__content {
+        justify-items: center;
+        margin-left: 30px;
+        grid-template-columns: 1fr;
+        padding: 50px 0 50px 0;
+    }
+    .coffee__machine__smik__2021 {
+        width: 700px;
+        height: 100%;
+    }
+    .coffee__photo, .red__coffeemachine__photo  {
+        margin-left: 0;
+        height: 420px;
+        margin-top: 60px;
+        max-width: 100%;
+    }
+    #exceptional__taste {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .exceptional__content {
+        margin-left: 0;
+    }
+    #arrival {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 990px) {
+    .coffee__photo,
+    #arrival .arrival__content,
+    .questions__content {
+        margin-left: 0;
+    }
+    #exceptional__taste, #arrival,
+    #questions,
+    .choose .container,
+    #contacts .container {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .servicesmenu__element,
+    .video__content .container .video__grid,
+    .faq {
+        grid-template-columns: 1fr;
+    }
+    #arrival {
+        margin: 0 0 220px 0;
+    }
+    .red__coffeemachine,
+    #questions img {
+        margin-top: 130px;
+    }
+    #questions img {
+        margin-left: 0;
+    }
+    .action {
+        max-width: 100%;
+    }
+    .servicesmenu__element__content {
+        margin-top: 50px;
+    }
+    .questions__content {
+        display: block;
+    }
+    #pricing .container .store__packages {
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .experience {
+        grid-template-columns: 1fr 1fr;
+    }
+    .playvid {
+        margin-top: 30px;
+    }
+    .video__content .container {
+        margin-left: 40px;
+    }
+    .choose {
+        padding: 50px 0 30px 0;
+    }
+    .choose .choose__buttons {
+        margin-top: 0px;
+    }
+    .choose .button__outline {
+        margin-left: 30px;
+    }
+    .contact__request {
+        margin-top: 100px;
+    }
+    .servicesmenu__element {
+        margin: 0;
+    }
+}
+@media (max-width: 680px) {
+    #pricing .container .store__packages,
+    .about__countainer,
+    #about .about__countainer,
+    .elements__steps,
+    .benefits__container {
+        grid-template-columns: 1fr;
+    }
+    .benefits__container {
+        justify-items: center;
+    }
+    .footer__nav, .socnetwork .container,
+    .info__address,
+    .info__hours,
+    .info__contacts {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    #contacts .container .contacts__content .section__tag,
+    #contacts .container .contacts__content .section__name,
+    #contacts .container .contacts__content .comment {
+        text-align: center;
+    }
+    .choose .container {
+        margin-left: 10px;
+    }
+    .choose .container {
+        justify-items: left;
+    }
+    .first__footer__nav {
+        margin-left: 0;
+    }
+    .video__name {
+        font-size: 50px;
+    }
+    .footer__nav > div,
+    .footer__nav > nav {
+        margin-top: 50px;
+    }
+    .socnetwork__icons {
+        margin-top: 30px;
+    }
+    .contacts__content,
+    .exceptional__content,
+    #arrival .arrival__content {
+        margin-left: 10px;
+    }
+    .faq {
+        justify-items: center;
+    }
+    .faq img {
+        max-width: 100%;
+    }
+    .experience {
+        grid-template-columns: 1fr;
+    }
+    #questions img,
+    .red__coffeemachine,
+    .coffee__photo,
+    .coffee__photo__container {
+        max-width: 100%;
+    }
+    .arrival__content .comment {
+        text-align: left;
+    }
+    #questions img {
+        max-width: 100%;
+    }
+    .coffee__machine__smik__2021 {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .coffeemachine__carousel__arrows,
+    .customNextBtn,
+    .customPreviousBtn {
+        display: none;
+    }
+    .products__element {
+        max-width: 100%;
+    }
+    .servicesmenu__element__content {
+        margin-left: 10px;
+    }
+    .servicesmenu__element__container {
+        margin-left: 0;
+    }
+}
+@media (max-width: 400px) {
+    .servicesmenu__element img,
+    .special__content {
+        max-width: 100%;
+    }
+    #pricing .container .store__packages .store__element {
+        padding: 20px 50px 0 50px;
+    }
+    .action__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .button__outline,
+    .action a {
+        margin: 0;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    #rental {
+        margin-left: 15px;
+        max-width: 320px;
+        padding: 100px 0 100px 0;
+    }
+    .rental__name,
+    .name__red,
+    .special__name {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .action .button__outline,
+    .action .button__second {
+        margin-top: 40px;
+    }
+    .action {
+        padding: 50px 40px 50px 40px;
+    }
+    #arrival {
+        margin-bottom: 20px;
+    }
+    #exceptional__taste {
+        margin-top: 0;
+    }
+    .coffee__machine__smik__2021 {
+        max-width: 200px;
+        max-height: 100%;
+    }
+    .services__hr {
+        display: none;
+    }
+    .middle__nav .services__menu {
+        grid-template-columns: 1fr;
+    }
+    .tab-trigger {
+        margin-top: 40px;
+    }
+    .tab-trigger__active {
+        border: 0;
+        padding: 0;
+    }
+    .middle__nav .services__menu li {
+        margin-left: 0;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .middle__nav {
+        margin: 30px 0;
+    }
+    .special__buttons {
+        margin-bottom: 80px;
+    }
 }
