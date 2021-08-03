@@ -42,3 +42,15 @@ const menu = document.querySelector('.mobile-header');
 const content = document.querySelector('.burger-menu-content');
 const menuButton = document.querySelector('.burger-button');
 menuButton.addEventListener('click', showBurger);
+// smooth scroll
+const anchors = document.querySelectorAll('.smooth-scroll')
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault()
+    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}

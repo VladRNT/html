@@ -1322,6 +1322,14 @@ nav.active .burger-button span {
 .burger-menu-content {
     display: none;
 }
+.burger-geo,
+.burger-phone {
+    display: flex;
+}
+.burger-geo .adress,
+.burger-phone .contacts__number {
+    margin-left: 20px;
+}
 /* 
 =========================================================
                         Responsive <3 
@@ -1392,7 +1400,7 @@ nav.active .burger-button span {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 30px;
-        text-align: center;
+        margin-left: 50px;
     }
 }
 @media (max-width: 990px) {
